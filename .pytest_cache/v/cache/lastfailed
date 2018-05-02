@@ -1,0 +1,6 @@
+{
+  "tests/test_hello.py::SomeTest::test_index": true,
+  "tests/test_hello.py::TestHello::test_": true,
+  "tests/test_hello.py::TestHello::test_hello": true,
+  "tests/test_hello.py::TestHello::test_index": true
+}

@@ -1,15 +1,14 @@
 from unittest import TestCase
-from kata_api_entreprise import app
+
+from kata_api_entreprise.view import create_app
 
 
-class TestHello(TestCase):
-    def test_hello(self):
-        # Given
-        app.testing = True
-        self.app = app.test_client()
+class TestEntrepriseApi(TestCase):
+    def setup_method(self, method):
+        self.app = create_app(config='test')
+        self.client = self.app.test_client()
 
-        # When
-        response = self.app.get('/entreprise')
-
-        # Then
-        assert response.status_code == 404
+    def test_get_api_entreprise_returns_informations(self):
+        rv = self.client.get('/')
+        self.assertEqual(rv.data, b'Hello, World!')
+        self.assertEqual(rv.status_code, 200)
