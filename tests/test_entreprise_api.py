@@ -9,6 +9,6 @@ class TestEntrepriseApi(TestCase):
         self.client = self.app.test_client()
 
     def test_get_api_entreprise_returns_informations(self):
-        rv = self.client.get('/')
-        self.assertEqual(rv.data, b'Hello, World!')
-        self.assertEqual(rv.status_code, 200)
+        response = self.client.get('/entreprise')
+        assert response.status_code == 200
+        assert response.data == b'Hello, World!'
