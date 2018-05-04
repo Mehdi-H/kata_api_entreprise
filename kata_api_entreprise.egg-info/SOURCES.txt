@@ -1,0 +1,6 @@
+kata_api_entreprise.egg-info/PKG-INFO
+kata_api_entreprise.egg-info/SOURCES.txt
+kata_api_entreprise.egg-info/dependency_links.txt
+kata_api_entreprise.egg-info/not-zip-safe
+kata_api_entreprise.egg-info/requires.txt
+kata_api_entreprise.egg-info/top_level.txt
