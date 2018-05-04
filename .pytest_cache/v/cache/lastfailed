@@ -1,8 +1,0 @@
-{
-  "tests/test_hello.py::SomeTest::test_index": true,
-  "tests/test_hello.py::TestHello::test_": true,
-  "tests/test_hello.py::TestHello::test_hello": true,
-  "tests/test_hello.py::TestHello::test_index": true,
-  "tests/view/test_view.py::TestEntrepriseApi::()::test_get_api_entreprise_octo_returns_correct_json_data": true,
-  "tests/view/test_view.py::TestEntrepriseApi::()::test_get_api_entreprise_octo_siret_returns_good_data": true
-}
